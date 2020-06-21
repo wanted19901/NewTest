@@ -25,13 +25,24 @@ btn_subtraction1.onclick = () =>{
 }
 
 btn_upper2.onclick = () => { 
-  value2 += getRandomInt(-1,-10); 
+  value2 += getRandomInt(-1,-11); 
   (value2 < 0) ? input2_value.value = value2 = 0 : input2_value.value=value2 ;
   
 }
 
 btn_subtraction2.onclick = () =>{
- value2 -=  getRandomInt(-1,-10);
+ value2 -=  getRandomInt(-1,-11);
  (value2 < 0) ? input2_value.value = value2 = 0 : input2_value.value=value2 ;
  
 }
+
+
+$(function(){
+ console.log("Window is load")
+});
+$(document).ready(function(){
+  console.log('Document ready!');
+});
+
+
+

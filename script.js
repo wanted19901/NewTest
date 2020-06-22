@@ -14,8 +14,8 @@ value1 = parseInt(input1_value.value,10)
 value2 = parseInt(input2_value.value,10)
 
 btn_upper1.onclick = () => { 
-  value1 += getRandomInt(0,11); 
-  input1_value.value=value1;
+    value1 += getRandomInt(0,11); 
+    input1_value.value=value1;
 }
 
 btn_subtraction1.onclick = () =>{
@@ -26,13 +26,13 @@ btn_subtraction1.onclick = () =>{
 
 btn_upper2.onclick = () => { 
   value2 += getRandomInt(-1,-11); 
-  (value2 < 0) ? input2_value.value = value2 = 0 : input2_value.value=value2 ;
+  (value2 < -1) ? input2_value.value = value2 = 0 : input2_value.value=value2 ;
   
 }
 
 btn_subtraction2.onclick = () =>{
  value2 -=  getRandomInt(-1,-11);
- (value2 < 0) ? input2_value.value = value2 = 0 : input2_value.value=value2 ;
+ (value2 < -1) ? input2_value.value = value2 = 0 : input2_value.value=value2 ;
  
 }
 

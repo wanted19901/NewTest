@@ -1,0 +1,31 @@
+<?php
+
+$myArray = array(
+	"Тесто",
+	"Галоперидол",
+	"Муха тоже вертолет, только маленький еще",
+	"lorem ipsum а"
+);
+$str = "а";
+
+
+function strReplaser($arrOrStr, $str) {
+	if (is_array($arrOrStr)){
+		$separated = implode(",", $arrOrStr);
+		$format=str_replace($str,'',$separated);
+		$format=str_replace(',',' ',$format);
+		$endArray = explode(" ", $format);
+		
+	}
+	
+	else {
+		$format=str_replace('$str','',$separated);
+		$format=str_replace(',',' ',$format);
+		$endArray = explode(" ", $format);
+	}
+	$myJSON=json_encode($endArray, JSON_UNESCAPED_UNICODE);  
+ 
+
+	return $myJSON;
+}
+ strReplaser($myArray, $str);
